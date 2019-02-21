@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mono.Cecil" Version="0.10.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Meissa.Core.Model">
+      <HintPath>..\dependcies\Meissa.Core.Model\Meissa.Core.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Meissa.Plugins.Contracts">
+      <HintPath>..\dependcies\Meissa.Plugins.Contracts\Meissa.Plugins.Contracts.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
