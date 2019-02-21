@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meissa.xunit", "Meissa.xunit\Meissa.xunit.csproj", "{748BD9D3-D0F4-441A-B785-393CF524D751}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meissa.Plugins.XUnit", "Meissa.xunit\Meissa.Plugins.XUnit.csproj", "{748BD9D3-D0F4-441A-B785-393CF524D751}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{237AECE9-9223-45FE-8FD7-B0EE986EB081}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meissa.XUnit.SampleTests", "Meissa.XUnit.Tests\Meissa.XUnit.SampleTests.csproj", "{3B04F3BC-8591-4CF8-875C-FBFC6934CB76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meissa.XUnit.UnitTests", "Meissa.XUnit.UnitTests\Meissa.XUnit.UnitTests.csproj", "{2A1A21F4-AA8F-4003-A533-697B461269A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +21,21 @@ Global
 		{748BD9D3-D0F4-441A-B785-393CF524D751}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{748BD9D3-D0F4-441A-B785-393CF524D751}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{748BD9D3-D0F4-441A-B785-393CF524D751}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B04F3BC-8591-4CF8-875C-FBFC6934CB76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B04F3BC-8591-4CF8-875C-FBFC6934CB76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B04F3BC-8591-4CF8-875C-FBFC6934CB76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B04F3BC-8591-4CF8-875C-FBFC6934CB76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A1A21F4-AA8F-4003-A533-697B461269A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A1A21F4-AA8F-4003-A533-697B461269A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A1A21F4-AA8F-4003-A533-697B461269A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A1A21F4-AA8F-4003-A533-697B461269A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3B04F3BC-8591-4CF8-875C-FBFC6934CB76} = {237AECE9-9223-45FE-8FD7-B0EE986EB081}
+		{2A1A21F4-AA8F-4003-A533-697B461269A3} = {237AECE9-9223-45FE-8FD7-B0EE986EB081}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CD377D23-5FC5-481F-8454-47FB972C3EE8}
