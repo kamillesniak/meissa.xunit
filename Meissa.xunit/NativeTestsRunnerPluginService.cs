@@ -18,15 +18,18 @@ namespace Meissa.Plugins.XUnit
     {
         public string Name => "Xunit";
 
-        public string RunnerFile => throw new NotImplementedException();
+        public string RunnerFile => Directory.GetCurrentDirectory()+ "xunit.console.exe";
 
-        public string ResultsFileExtension => "trx";
+        public string ResultsFileExtension => "xml";
 
         public List<string> RunnerProcessesNamesToKill => throw new NotImplementedException();
 
         public string BuildNativeRunnerArguments(string libraryName, string libraryPath, List<TestCase> testCasesToBeExecuted, string testResultsFilePath, string outputFilesDir, string nativeArguments)
         {
-            throw new NotImplementedException();
+            var testListFilePath = CreateTestListFile(testCasesToBeExecuted);
+            var arguments = $" {libraryPath} -{ResultsFileExtension} {testResultsFilePath}  {testListFilePath} {nativeArguments}";
+
+            return arguments;
         }
 
         public object DeserializeTestResults(string originalRunTestResults)
@@ -107,6 +110,19 @@ namespace Meissa.Plugins.XUnit
         public List<TestCaseRun> UpdateTestCasesHistory(object testRun, string libraryName)
         {
             throw new NotImplementedException();
+        }
+
+        private string CreateTestListFile(List<TestCase> distributedTestCases)
+        {
+            var testListFilePath = Path.GetTempFileName();
+            var sb = new StringBuilder();
+            foreach (var testCase in distributedTestCases)
+            {
+                sb.AppendLine("-method \""+testCase.FullName+"\"");
+            }
+
+            File.WriteAllText(testListFilePath, sb.ToString());
+            return testListFilePath;
         }
     }
 }

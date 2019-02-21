@@ -21,16 +21,19 @@
       <HintPath>..\dependcies\Meissa.Plugins.Contracts\Meissa.Plugins.Contracts.dll</HintPath>
     </Reference>
     <Reference Include="xunit.abstractions">
-      <HintPath>..\packages\xunit.runner.console\2.4.1\tools\netcoreapp2.0\xunit.abstractions.dll</HintPath>
+      <HintPath>..\packages\xunit.runner.console\2.4.1\tools\net472\xunit.abstractions.dll</HintPath>
     </Reference>
     <Reference Include="xunit.console">
-      <HintPath>..\packages\xunit.runner.console\2.4.1\tools\netcoreapp2.0\xunit.console.dll</HintPath>
+      <HintPath>..\packages\xunit.runner.console\2.4.1\tools\net472\xunit.console.exe</HintPath>
     </Reference>
-    <Reference Include="xunit.runner.reporters.netcoreapp10">
-      <HintPath>..\packages\xunit.runner.console\2.4.1\tools\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll</HintPath>
+    <Reference Include="xunit.console.x86">
+      <HintPath>..\packages\xunit.runner.console\2.4.1\tools\net472\xunit.console.x86.exe</HintPath>
     </Reference>
-    <Reference Include="xunit.runner.utility.netcoreapp10">
-      <HintPath>..\packages\xunit.runner.console\2.4.1\tools\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll</HintPath>
+    <Reference Include="xunit.runner.reporters.net452">
+      <HintPath>..\packages\xunit.runner.console\2.4.1\tools\net472\xunit.runner.reporters.net452.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.runner.utility.net452">
+      <HintPath>..\packages\xunit.runner.console\2.4.1\tools\net472\xunit.runner.utility.net452.dll</HintPath>
     </Reference>
   </ItemGroup>
 
