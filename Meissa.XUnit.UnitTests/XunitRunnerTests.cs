@@ -11,6 +11,7 @@ namespace Meissa.XUnit.UnitTests
         [TestMethod]
         public void TestMethod1()
         {
+            
             var test = Directory.GetCurrentDirectory() + @"\Meissa.XUnit.SampleTests.dll";
             var runner = new NativeTestsRunnerTestCasesPluginService();
             runner.ExtractAllTestCasesFromTestLibrary(test);

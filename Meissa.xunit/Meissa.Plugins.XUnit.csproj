@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+  <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
@@ -18,6 +19,18 @@
     </Reference>
     <Reference Include="Meissa.Plugins.Contracts">
       <HintPath>..\dependcies\Meissa.Plugins.Contracts\Meissa.Plugins.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.abstractions">
+      <HintPath>..\packages\xunit.runner.console\2.4.1\tools\netcoreapp2.0\xunit.abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.console">
+      <HintPath>..\packages\xunit.runner.console\2.4.1\tools\netcoreapp2.0\xunit.console.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.runner.reporters.netcoreapp10">
+      <HintPath>..\packages\xunit.runner.console\2.4.1\tools\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.runner.utility.netcoreapp10">
+      <HintPath>..\packages\xunit.runner.console\2.4.1\tools\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll</HintPath>
     </Reference>
   </ItemGroup>
 
